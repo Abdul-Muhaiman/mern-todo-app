@@ -1,0 +1,90 @@
+/* components/create-todo/create-todo.css - Redesign (Version 4) */
+
+.create-todo-container {
+    padding: 0 0 2rem 0; /* Adjusted bottom padding */
+}
+
+.create-todo-container h3 {
+    font-size: 1.9rem; /* Slightly larger title */
+    color: var(--text-color-primary);
+    text-align: left;
+    margin-bottom: 1.1rem; /* Adjusted margin */
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-color-light);
+}
+
+.create-todo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem; /* Increased form group spacing */
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.form-group label {
+    display: block;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 0.6rem; /* Adjusted label margin */
+    color: var(--text-color-primary);
+    font-size: 1.15rem; /* Slightly larger label font */
+}
+
+.form-control {
+    width: 100%;
+    padding: 1rem 1.2rem; /* Increased input padding */
+    font-size: 1.15rem; /* Larger input font */
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius-small);
+    box-shadow: var(--box-shadow-small);
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    color: var(--text-color-primary);
+}
+
+.form-control::placeholder {
+    color: var(--text-color-secondary);
+    opacity: 0.8;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: var(--box-shadow-medium), 0 0 0 0.2rem rgba(var(--primary-color-rgb), 0.15); /* Focus shadow */
+    /* rgba(var(--primary-color-rgb), 0.15) might need --primary-color-rgb defined in :root */
+}
+
+.btn {
+    padding: 1.1rem 2.2rem; /* Increased button padding */
+    font-size: 1.15rem; /* Larger button font */
+    font-weight: var(--font-weight-bold);
+    border: none;
+    border-radius: var(--border-radius-small);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in;
+    box-shadow: var(--box-shadow-small);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--box-shadow-medium);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: var(--box-shadow-small);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--card-background); /* Contrast color is now card-background (white) */
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color-darker);
+}
+
+.submit-group {
+    text-align: left;
+    margin-top: 1.3rem; /* Adjusted submit group margin */
+}

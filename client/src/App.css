@@ -1,0 +1,64 @@
+/* App.css - Redesign - Consistent Styles (Version 4 - Fresh Look) */
+
+/* --- New Color Palette --- */
+:root {
+    --primary-color: #2ecc71; /* Example primary color - a vibrant green/teal */
+    --primary-color-light: #e6f9f0; /* Very light primary background */
+    --primary-color-darker: #23aa5d; /* Darker primary for hover/active */
+    --secondary-color: #f39c12; /* Example secondary/accent color - gold/amber */
+    --background-color: #fbfcfd; /* Very light off-white background */
+    --card-background: #ffffff; /* White for cards/list items */
+    --text-color-primary: #3a4a56; /* Dark grey-blue primary text */
+    --text-color-secondary: #6e7e8a; /* Medium grey-blue secondary text */
+    --border-color: #e8ecef; /* Very light grey border */
+    --box-shadow-small: 0 1px 2px rgba(0, 0, 0, 0.05); /* Very subtle shadow */
+    --box-shadow-medium: 0 2px 5px rgba(0, 0, 0, 0.08); /* Slightly more noticeable shadow */
+    --border-radius-small: 8px;
+    --border-radius-medium: 12px;
+    --font-family-base: 'Nunito Sans', sans-serif; /* Modern, friendly font - consider importing in index.css */
+    --font-weight-regular: 400; /* Regular font weight */
+    --font-weight-bold: 600; /* Semi-bold font weight */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-base);
+    background-color: var(--background-color);
+    color: var(--text-color-primary);
+    line-height: 1.7; /* Improved line height */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.main-app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center; /* Center app horizontally */
+    padding: 2rem; /* Add padding around the main app for smaller screens */
+}
+
+.app-container {
+    max-width: 900px; /* Adjusted max-width for a balanced width */
+    width: 100%; /* Take full width within max-width */
+    margin-top: 2rem;
+    margin-bottom: 2rem; /* Keep vertical margins */
+    padding: 2.5rem 3rem; /* Slightly more horizontal padding */
+    background-color: var(--card-background); /* White container background */
+    border-radius: var(--border-radius-medium);
+    box-shadow: var(--box-shadow-medium);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2.5rem; /* Increased spacing between sections */
+}
+
+.app-container h1 {
+    font-size: 2.8rem; /* Larger main title */
+    font-weight: var(--font-weight-bold);
+    color: var(--text-color-primary);
+    text-align: center;
+    margin-bottom: 1.3rem; /* Adjusted title margin */
+    letter-spacing: -0.015em; /* Fine-tuned letter spacing */
+}

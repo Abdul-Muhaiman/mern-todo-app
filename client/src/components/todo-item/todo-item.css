@@ -1,0 +1,93 @@
+/* components/todo-item/todo-item.css - Redesign (Version 4 Refinement 2 - Icons & Alignment) */
+
+.todo-item {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius-small);
+    padding: 1.2rem 1.6rem;
+    display: flex;
+    align-items: center; /* Ensuring vertical alignment is centered */
+    justify-content: space-between;
+    box-shadow: var(--box-shadow-small);
+    margin-bottom: 0.4rem;
+    transition: box-shadow 0.2s ease-in-out, border-left-color 0.2s ease-in-out;
+    border-left: 5px solid transparent;
+}
+
+.todo-item:hover {
+    box-shadow: var(--box-shadow-medium);
+    border-left-color: var(--primary-color);
+    background-color: var(--primary-color-light);
+}
+
+.check-icon {
+    margin-right: 1rem;
+    cursor: pointer;
+    opacity: 0.9;
+    display: flex; /* Use flexbox for icon alignment */
+    align-items: center; /* Vertically center checkbox icon */
+    transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
+    /* No changes to check-icon itself in this refinement */
+}
+
+.check-icon:hover {
+    opacity: 1;
+}
+
+.incomplete-icon {
+    color: var(--text-color-secondary);
+    font-size: 1.2rem; /* Checkbox icon size - kept same */
+    /* No changes to incomplete-icon in this refinement */
+}
+
+.complete-icon {
+    color: var(--primary-color);
+    font-size: 1.2rem; /* Checkbox icon size - kept same */
+    /* No changes to complete-icon in this refinement */
+}
+
+.todo-text {
+    flex-grow: 1;
+    font-size: 1.15rem;
+    color: var(--text-color-primary);
+    word-break: break-word;
+    line-height: 1.5;
+    display: flex; /* Use flexbox for text alignment */
+    align-items: center; /* Vertically center text */
+    padding-top: 0.1rem; /* **Slightly adjust text vertical position if needed** */
+    padding-bottom: 0.1rem; /* **Slightly adjust text vertical position if needed** */
+}
+
+.todo-text p {
+    margin: 0;
+}
+
+.todo-item.completed .todo-text p {
+    text-decoration: line-through;
+    color: var(--text-color-secondary);
+}
+
+.edit-delete-icons {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center; /* Vertically align edit/delete icons */
+}
+
+.edit-icon, .delete-icon {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
+    font-size: 1.2rem; /* **Increased edit/delete icon size from 1rem to 1.2rem** */
+}
+
+.edit-icon:hover {
+    opacity: 1;
+    color: var(--secondary-color);
+}
+
+.delete-icon {
+    color: #e74c3c;
+}
+
+.delete-icon:hover {
+    opacity: 1;
+}
